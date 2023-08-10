@@ -52,6 +52,7 @@ form{
 }
 
 .search-results {
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -107,4 +108,20 @@ form{
     cursor:pointer;
     width: 30%;
     display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .search-results{
+        padding: 20px;
+    }
+    .search-results{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px){
+    .search-results{
+        grid-template-columns: 1fr;
+    }
 }
