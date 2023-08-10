@@ -41,7 +41,7 @@ form{
     width: 25%;
     max-width: 100px;
     height: 50px;
-    background-color: rgb(23, 146, 77);
+    background-color: rgb(42, 165, 96);
     color: aliceblue;
     border: none;
     padding: 10px;
@@ -50,6 +50,11 @@ form{
     font-style: italic;
     font-size: small;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#search-button:hover{
+    background-color: rgb(55, 182, 110);
 }
 
 .search-results {
