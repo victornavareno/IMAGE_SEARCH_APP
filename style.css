@@ -48,6 +48,7 @@ form{
     border-radius: 20px;
     font-style: italic;
     font-size: small;
+    cursor: pointer;
 }
 
 .search-results {
@@ -61,10 +62,11 @@ form{
 .search-result{
     margin-bottom: 60px;
     width: 80%;
-    height: 80%;
+    height: 82%;
     border-radius: 10px;
     box-shadow: 0 0 6px rgb(0, 0, 0, 0.2);
     overflow: hidden;
+    cursor: pointer;
 }
 
 
@@ -72,10 +74,37 @@ form{
     width: 100%;
     height: 200px;
     object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
 }
 
-a{
+.search-result img:hover{
+    opacity: 80%;
+}
+
+.search-result a{
     text-decoration: none;
     color: #333;
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    
+}
+
+#show-more-button{
+    background-color: rgb(42, 119, 122);
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: auto auto;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    cursor:pointer;
+    width: 30%;
+    display: none;
 }
