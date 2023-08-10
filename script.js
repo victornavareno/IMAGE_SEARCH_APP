@@ -51,4 +51,16 @@ async function searchImages(inputData){
     if(page > 1){
         showMore.style.display = "active";
     }
+
+    formElement.addEventListener("submit", (e) => {
+        e.preventDefault();
+        page = 1;
+        searchImages();
+    })
+
+    showMore.addEventListener("click", (e) => {
+        e.preventDefault();
+        page = 1;
+        searchImages();
+    })
 }
